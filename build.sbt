@@ -43,7 +43,7 @@ lazy val bar = crossProject(JSPlatform, JVMPlatform)
   .crossType(CrossType.Pure)
   .settings(protobufSettings())
   .jsSettings(
-    libraryDependencies := libraryDependencies.value.filter(_.name == "scalapb-runtime_2.12")
+//    libraryDependencies := libraryDependencies.value.filter(_.name == "scalapb-runtime_2.12")
   )
 
 lazy val barJS = bar.js
